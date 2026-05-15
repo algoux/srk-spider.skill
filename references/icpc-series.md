@@ -70,7 +70,7 @@ When using ratio-based medal allocation:
 2. Use `@algoux/standard-ranklist-utils` to convert to a static ranklist.
 3. Compare computed segment assignment against the original board.
 4. If the source and srk result differ, adjust only after identifying the cause: official filtering, denominator choice, tie handling, rounding, or source-specific medal policy.
-5. Put unresolved differences in `remarks`.
+5. Put unresolved differences in `remarks` only when they are caused by missing or unavailable source data that ranklist viewers should see. Otherwise, report the verification mismatch and likely cause in the final user summary.
 
 ## Marker-Specific Rankings
 

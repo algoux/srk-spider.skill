@@ -51,7 +51,7 @@ Prefer existing `algoux/rank-spider` scripts before custom work.
 - Download or copy `user.photo`, `user.avatar`, `contest.banner`, and similar media there.
 - Use relative srk values such as `assets/banner.png`.
 - Generate collision-safe filenames from stable ids plus sanitized extensions.
-- If a media URL fails, keep a `remarks` note rather than silently dropping the issue.
+- If media is unavailable or cannot be downloaded, do not add it to `remarks`; report it in the final user summary instead.
 
 ## When to Ask the User
 

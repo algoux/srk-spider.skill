@@ -47,7 +47,7 @@ Use this before delivering or handing off a generated srk file.
 - Include `score`, `time`, `tries`, and `solutions` when the source exposes them.
 - Sort `solutions` by submission time ascending.
 - Use predefined result values where applicable: `AC`, `FB`, `RJ`, `WA`, `PE`, `TLE`, `MLE`, `OLE`, `RTE`, `NOUT`, `CE`, `UKE`, `?`, or `null` for no summary submission.
-- If the source lacks status summary, score, or full submissions, generate the best valid srk and describe the gap in `remarks`.
+- If the source lacks status summary, score, or full submissions, generate the best valid srk. Put the gap in `remarks` only if it is important for ranklist viewers.
 
 ## Assets
 
@@ -55,7 +55,7 @@ Use this before delivering or handing off a generated srk file.
 - Reference media by relative paths such as `assets/team-alpha.jpg`.
 - Apply this to `user.photo`, `user.avatar`, `contest.banner`, and similar fields.
 - Preserve file extensions when possible; otherwise derive them from content type.
-- Note failed or unavailable media in `remarks`.
+- Do not put missing or unavailable media in `remarks`; mention it in the final user summary.
 
 ## Contributors and Remarks
 
@@ -66,13 +66,12 @@ Use this before delivering or handing off a generated srk file.
 "bLue (https://example.com/)"
 ```
 
-- Use `remarks` for all meaningful caveats:
+- Use `remarks` only for important, external-facing warnings caused by missing or unavailable source data:
   - Medal counts or boundaries missing.
-  - Time precision or contest timing inferred.
-  - Official/star-team detection inferred.
-  - Submission histories, score details, or problem statistics unavailable.
-  - Media download failures.
-  - Any source-to-srk behavior that required approximation.
+  - Contest timing fields missing and therefore inferred.
+  - Submission histories, score details, status summaries, or problem statistics unavailable.
+- Media fields such as `user.photo`, `user.avatar`, and `contest.banner` are not important warning data for `remarks`; report missing or unavailable media only in the final user summary.
+- Do not use `remarks` for crawler strategy, attempted approaches, validation steps, authentication/cookie notes, performance issues, implementation tradeoffs, or general potential risks. Put those in the final summary to the user.
 
 ## Validation
 

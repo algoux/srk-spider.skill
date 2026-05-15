@@ -22,8 +22,9 @@ Never hand-compose the final srk from conversational context. Always run an exis
 4. Preserve the richest available data: contest metadata, problems, score/status summaries, full submissions, team members, organizations, locations, photos, avatars, banners, links, and source-specific notes.
 5. Store media beside the output srk in `assets/` unless the user asks for another layout. Reference files as relative paths such as `assets/team-alpha.jpg`.
 6. Ask for the user's contributor nickname and homepage link before finalizing `contributors`.
-7. Record known gaps in `remarks`, including missing medal configuration, inferred timing, unavailable submission histories, or incomplete source data.
-8. Validate shape and behavior before delivery. At minimum, check JSON validity, problem/status alignment, required fields, media paths, markers, official/unofficial users, and rank-series output.
+7. Use `remarks` only for important external-facing warnings caused by missing or unavailable source data, such as missing medal boundaries or unavailable submission histories.
+8. Keep crawl strategy, attempted approaches, implementation tradeoffs, assumptions, and non-data-loss risks out of `remarks`; report them in the final summary to the user.
+9. Validate shape and behavior before delivery. At minimum, check JSON validity, problem/status alignment, required fields, media paths, markers, official/unofficial users, and rank-series output.
 
 ## References
 
