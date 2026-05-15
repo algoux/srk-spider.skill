@@ -1,0 +1,7 @@
+interface:
+  display_name: "srk Spider"
+  short_description: "Crawl ranklists into srk JSON"
+  default_prompt: "Use $srk-spider to crawl a contest ranklist and convert it into validated srk JSON."
+
+policy:
+  allow_implicit_invocation: true
