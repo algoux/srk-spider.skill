@@ -1,5 +1,19 @@
 # srk-spider
 
+对人类用户，要快速开始，只需对你的智能体说：
+
+```text
+帮我安装 `https://github.com/algoux/srk-spider.skill` 这个 skill，并使用 srk-spider skill 爬取这个比赛：<URL 或文件>
+```
+
+For human users, to get started quickly, simply say to your agent:
+
+```text
+Help me install the `https://github.com/algoux/srk-spider.skill` skill, and use the srk-spider skill to crawl this contest: <URL or file>
+```
+
+----
+
 `srk-spider` is an Agent Skill for crawling external competitive-programming ranklists and converting them into Standard Ranklist (srk) JSON.
 
 The skill is written for agents that support the `SKILL.md` convention. It guides the agent to prefer official algoUX crawler scripts, write reproducible converters when needed, preserve rich source data, handle media assets, and validate the generated srk output.
