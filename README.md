@@ -2,11 +2,11 @@
 
 对人类用户，要快速开始，只需对你的智能体说：
 
-> 帮我安装 `https://github.com/algoux/srk-spider.skill` 这个 skill，并使用 srk-spider skill 爬取这个比赛：<URL 或文件>
+> 帮我安装 `https://github.com/algoux/srk-spider.skill` 这个 skill，并使用 srk-spider skill 爬取这个比赛：\<URL 或文件\>
 
 For human users, to get started quickly, simply say to your agent:
 
-> Help me install the `https://github.com/algoux/srk-spider.skill` skill, and use the srk-spider skill to crawl this contest: <URL or file>
+> Help me install the `https://github.com/algoux/srk-spider.skill` skill, and use the srk-spider skill to crawl this contest: \<URL or file\>
 
 ----
 
