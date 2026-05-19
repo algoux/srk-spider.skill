@@ -14,6 +14,7 @@ Prefer existing `algoux/rank-spider` scripts before custom work.
 | PTA | `spidercraft/src/programs/pta-*` | Pick rankings, ranklist, or Excel flow from source format. |
 | Nowcoder | `spidercraft/src/programs/nowcoder.ts` | Inspect required ids/cookies/options with `-h`. |
 | Hydro event feed | `spidercraft/src/programs/hydro-event-feed.ts` | Prefer event-feed data when available. |
+| QOJ | `spidercraft/src/programs/qoj.ts` | Use the contest id and check CLI help for options. |
 | Unsupported source | Custom JS/Node script | Build a reproducible crawler/converter and run it to emit srk. |
 
 ## Existing Script Flow

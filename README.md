@@ -18,7 +18,7 @@ The skill is written for agents that support the `SKILL.md` convention. It guide
 
 - Explore and reuse [`algoux/rank-spider`](https://github.com/algoux/rank-spider) before writing a custom crawler.
 - Prefer `rank_spider/` Python scripts for xcpcio boards.
-- Prefer `spidercraft/` Node/JS scripts for DOMjudge, Codeforces Gym, PTA, Nowcoder, Hydro, and similar supported sources.
+- Prefer `spidercraft/` Node/JS scripts for DOMjudge, Codeforces Gym, PTA, Nowcoder, Hydro, QOJ, and similar supported sources.
 - Write a custom reproducible crawler/converter when the source is unsupported.
 - Follow the srk spec, asset layout, marker conventions, ICPC series defaults, contributor handling, and `remarks` guidance.
 
