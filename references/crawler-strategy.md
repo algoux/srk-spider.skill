@@ -8,7 +8,7 @@ Prefer existing `algoux/rank-spider` scripts before custom work.
 
 | Source shape | First choice | Notes |
 | --- | --- | --- |
-| xcpcio board | `rank_spider/` Python scripts | Batch crawl xcpcio data, then choose the needed generated items. |
+| xcpcio board | `spidercraft/src/programs/xcpcio.ts` | Run `npm run xcpcio -- <board-url-or-path> -o <out.srk.json>` in `spidercraft/`; accepts full `board.xcpcio.com` URL or path. Downloads images to `assets/<output-name-without-.srk.json>/` by default; pass `--no-download-banner` to skip. Python `rank_spider/` is unmaintained. |
 | DOMjudge HTML/PDF | `spidercraft/src/programs/domjudge_*` | Match the source export shape before choosing HTML, old HTML, or PDF tooling. |
 | Codeforces Gym | `spidercraft/src/programs/cf-gym.ts` | Use the contest/gym id and inspect CLI help first. |
 | PTA | `spidercraft/src/programs/pta-*` | Pick rankings, ranklist, or Excel flow from source format. |
