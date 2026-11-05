@@ -15,8 +15,7 @@ Never hand-compose the final srk from conversational context. Always run an exis
 
 1. Identify the source platform, contest style, source URL/files, authentication needs, and desired output path.
 2. Check `algoux/rank-spider` before writing a custom crawler:
-   - For xcpcio boards, prefer Python scripts under `rank_spider/`.
-   - For DOMjudge, Codeforces Gym, PTA, Nowcoder, Hydro, QOJ, and most other covered sources, prefer Node/JS scripts under `spidercraft/`.
+   - Prefer Node/JS scripts under `spidercraft/` for xcpcio boards (`spidercraft/src/programs/xcpcio.ts`), DOMjudge, Codeforces Gym, PTA, Nowcoder, Hydro, QOJ, and most other covered sources. The Python `rank_spider/` scripts are unmaintained; do not use them for single-board crawls.
    - Read the matching script help (`-h`) or source before running it.
 3. If no existing script covers the source, write a custom crawler/converter script, preferably in JS/Node. Use source APIs first, DOM parsing second, and browser automation when interactive UI exposes extra data.
 4. Preserve the richest available data: contest metadata, problems, score/status summaries, full submissions, team members, organizations, locations, photos, avatars, banners, links, and source-specific notes.
